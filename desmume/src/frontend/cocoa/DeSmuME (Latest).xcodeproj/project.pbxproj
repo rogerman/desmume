@@ -87,6 +87,7 @@
 		AB1B9E661501A78000464647 /* ringbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB1B9E601501A78000464647 /* ringbuffer.cpp */; };
 		AB1F468413A0ADE400B80DE6 /* SndOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABD1FF7A1345ACFA00AF11D1 /* SndOut.cpp */; };
 		AB1F469813A0AE2F00B80DE6 /* Timestretcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABD1FF9B1345ACFA00AF11D1 /* Timestretcher.cpp */; };
+		AB20767A1FB415000076645C /* DeSmuME_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2076791FB415000076645C /* DeSmuME_Test.m */; };
 		AB23567416C2F6F400DA782E /* macosx_10_5_compat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB23567216C2F6F400DA782E /* macosx_10_5_compat.cpp */; };
 		AB23567516C2FAD800DA782E /* OGLRender_3_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB68A0DA16B139BC00DE0546 /* OGLRender_3_2.cpp */; };
 		AB26D87C16B5253D00A2305C /* OGLRender_3_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB68A0DA16B139BC00DE0546 /* OGLRender_3_2.cpp */; };
@@ -1303,6 +1304,16 @@
 		ABFEA8EA1BB4FB3200B08C25 /* truetype.c in Sources */ = {isa = PBXBuildFile; fileRef = ABFEA7E61BB4EC1000B08C25 /* truetype.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AB20767C1FB415000076645C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB796CA415CDCBA200C59155;
+			remoteInfo = "DeSmuME (OS X App)";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -1372,6 +1383,9 @@
 		AB1B9E601501A78000464647 /* ringbuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ringbuffer.cpp; sourceTree = "<group>"; };
 		AB1B9E611501A78000464647 /* coreaudiosound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coreaudiosound.h; sourceTree = "<group>"; };
 		AB1B9E621501A78000464647 /* ringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ringbuffer.h; sourceTree = "<group>"; };
+		AB2076771FB415000076645C /* DeSmuME-Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DeSmuME-Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2076791FB415000076645C /* DeSmuME_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeSmuME_Test.m; sourceTree = "<group>"; };
+		AB20767B1FB415000076645C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB23567216C2F6F400DA782E /* macosx_10_5_compat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = macosx_10_5_compat.cpp; sourceTree = "<group>"; };
 		AB29B15C18313ACD009B7982 /* slot2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slot2.h; sourceTree = "<group>"; };
 		AB29B16118313AF5009B7982 /* slot2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = slot2.cpp; sourceTree = "<group>"; };
@@ -2087,6 +2101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB2076741FB415000076645C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB796D6515CDCBA200C59155 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2243,6 +2264,7 @@
 				ABB3C6471501BC6D00E0C22E /* DeSmuME.oecoreplugin */,
 				AB796D7015CDCBA200C59155 /* DeSmuME (Debug).app */,
 				AB8F3D2E1A53AC2600A80BF6 /* DeSmuME (Debug, dev+).app */,
+				AB2076771FB415000076645C /* DeSmuME-Test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2253,6 +2275,7 @@
 				080E96DDFE201D6D7F000001 /* Cocoa Port */,
 				AB35BD8C1DEBF1BD00844310 /* Modules */,
 				ABC572B7134592D900E7B0B1 /* Core */,
+				AB2076781FB415000076645C /* DeSmuME-Test */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -2315,6 +2338,15 @@
 				AB000DC71CCC6B0700413F02 /* retro_stat.c */,
 			);
 			path = file;
+			sourceTree = "<group>";
+		};
+		AB2076781FB415000076645C /* DeSmuME-Test */ = {
+			isa = PBXGroup;
+			children = (
+				AB2076791FB415000076645C /* DeSmuME_Test.m */,
+				AB20767B1FB415000076645C /* Info.plist */,
+			);
+			path = "DeSmuME-Test";
 			sourceTree = "<group>";
 		};
 		AB2AB8731C9F9CFA00173B15 /* libretro-common */ = {
@@ -3406,6 +3438,24 @@
 			productReference = 8D1107320486CEB800E47090 /* DeSmuME.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AB2076761FB415000076645C /* DeSmuME-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2076801FB415000076645C /* Build configuration list for PBXNativeTarget "DeSmuME-Test" */;
+			buildPhases = (
+				AB2076731FB415000076645C /* Sources */,
+				AB2076741FB415000076645C /* Frameworks */,
+				AB2076751FB415000076645C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB20767D1FB415000076645C /* PBXTargetDependency */,
+			);
+			name = "DeSmuME-Test";
+			productName = "DeSmuME-Test";
+			productReference = AB2076771FB415000076645C /* DeSmuME-Test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AB796CA415CDCBA200C59155 /* DeSmuME (OS X App) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB796D6D15CDCBA200C59155 /* Build configuration list for PBXNativeTarget "DeSmuME (OS X App)" */;
@@ -3472,6 +3522,13 @@
 			attributes = {
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "DeSmuME Team";
+				TargetAttributes = {
+					AB2076761FB415000076645C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB796CA415CDCBA200C59155;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DeSmuME (Latest)" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3496,6 +3553,7 @@
 				AB8F3C171A53AC2600A80BF6 /* DeSmuME (OS X App; dev+) */,
 				8D1107260486CEB800E47090 /* DeSmuME (OS X App; v10.5 Leopard Release Build) */,
 				ABB3C6461501BC6D00E0C22E /* DeSmuME (OpenEmu Plug-in) */,
+				AB2076761FB415000076645C /* DeSmuME-Test */,
 			);
 		};
 /* End PBXProject section */
@@ -3618,6 +3676,13 @@
 				AB3ACC4314C24D5400D7D192 /* README.MAC in Resources */,
 				AB75226E14C7BB51009B97B3 /* AppIcon_FirmwareConfig.icns in Resources */,
 				AB8967DE16D2ED2700F826F1 /* DisplayWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2076751FB415000076645C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4239,6 +4304,14 @@
 				ABD10AEB1715FCDD00B5729D /* mic_ext.cpp in Sources */,
 				ABD42048172319D1006A9B46 /* FileMigrationDelegate.mm in Sources */,
 				AB4C81E51B21676C00ACECD5 /* hq3x.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2076731FB415000076645C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB20767A1FB415000076645C /* DeSmuME_Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4918,6 +4991,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AB20767D1FB415000076645C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB796CA415CDCBA200C59155 /* DeSmuME (OS X App) */;
+			targetProxy = AB20767C1FB415000076645C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		AB00E87914205EAE00DE561F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -4962,6 +5043,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AB20767E1FB415000076645C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "DeSmuME-Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.desmume.DeSmuME.DeSmuME-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeSmuME (Debug).app/Contents/MacOS/DeSmuME (Debug)";
+			};
+			name = Debug;
+		};
+		AB20767F1FB415000076645C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "DeSmuME-Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.desmume.DeSmuME.DeSmuME-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeSmuME (Debug).app/Contents/MacOS/DeSmuME (Debug)";
+			};
+			name = Release;
+		};
 		AB796D6E15CDCBA200C59155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5188,6 +5337,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AB2076801FB415000076645C /* Build configuration list for PBXNativeTarget "DeSmuME-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB20767E1FB415000076645C /* Debug */,
+				AB20767F1FB415000076645C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AB796D6D15CDCBA200C59155 /* Build configuration list for PBXNativeTarget "DeSmuME (OS X App)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
