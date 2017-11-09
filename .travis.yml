@@ -1,17 +1,17 @@
 os: osx
 osx_image: xcode9.1
 language: objective-c
-xcode_project: "desmume/src/frontend/cocoa/DeSmuME (Latest).xcodeproj"
-xcode_scheme: "DeSmuME (OS X App)"
-xcode_sdk: macosx10.13
+# xcode_project: "desmume/src/frontend/cocoa/DeSmuME (Latest).xcodeproj"
+# xcode_scheme: "DeSmuME (OS X App)"
+# xcode_sdk: macosx10.13
 
 branches:
   only:
     - master
 
-# build:
-# - script: xcodebuild -project "desmume/src/frontend/cocoa/DeSmuME (Latest).xcodeproj" -target "DeSmuME (OS X App)" -configuration "Release" clean
-# - script: xcodebuild -project "desmume/src/frontend/cocoa/DeSmuME (Latest).xcodeproj" -target "DeSmuME (OS X App)" -configuration "Release" build
+build:
+- script: xcodebuild -project "desmume/src/frontend/cocoa/DeSmuME (Latest).xcodeproj" -target "DeSmuME (OS X App)" -configuration "Release" clean
+- script: xcodebuild -project "desmume/src/frontend/cocoa/DeSmuME (Latest).xcodeproj" -target "DeSmuME (OS X App)" -configuration "Release" build
 
 deploy:
   provider: pages
